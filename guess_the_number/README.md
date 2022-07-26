@@ -25,14 +25,14 @@
   <p align="center">
     Tente descobrir o número secreto!
     <br />
-    <a href="https://github.com/ocaradosalgoritmos/guess_the_number"><strong>Consulte a documentação »</strong></a>
+    <a href="https://github.com/ocaradosalgoritmos/projetos_python/wiki"><strong>Consulte a documentação »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ocaradosalgorimtos/guess_the_number">Demonstração</a>
+    <a href="https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number">Demonstração</a>
     ·
-    <a href="https://github.com/ocaradosalgoritmos/guess_the_number/issues">Reportar um Bug</a>
+    <a href="https://github.com/ocaradosalgoritmos/projetos_python/issues">Reportar um Bug</a>
     ·
-    <a href="https://github.com/ocaradosalgoritmos/guess_the_number/issues">Sugerir uma melhoria</a>
+    <a href="https://github.com/ocaradosalgoritmos/projetos_python/issues">Sugerir uma melhoria</a>
   </p>
 </p>
 

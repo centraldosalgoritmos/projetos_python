@@ -13,12 +13,11 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/ocaradosalgorimtos/projetos_python">
-    <img src="../images/youtube-channel-logo.png" alt="Logo" width="240" height="240">
+    <img src="../images/youtube-channel-art.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Jogo Advinhe o Número (Number guessing Game) - Python</h3>
@@ -37,13 +36,12 @@
   </p>
 </p>
 
-
 <!-- TABLE OF CONTENTS -->
 ## Índice
 
 * [Sobre o projeto](#sobre-o-projeto)
-  * [Dependências](#built-with)
-* [Getting Started](#getting-started)
+  * [Tecnologias utilizadas](#tecnologias-utilizadas)
+* [Instruções](#instrues)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
@@ -53,98 +51,116 @@
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## Sobre o projeto
 
-[![Jogo Advinhe o Número Screenshot][product-screenshot]](https://example.com)
+[![Jogo Advinhe o Número Screenshot][product-screenshot]](https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+Este é um dos primeiros projetos feitos por estudantes de computação. A tarefa consiste em criar um jogo que escolha randômicamente um número secreto entre 1 e 100 e dê ao jogador a tarefa de acertâ-lo através de palpites.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+Regras:
+* A cada partida o sistema deve selecionar randômicamente um número entre 1 e 100.
+* Durante uma partida o jogador possui um número finito e pré definido de palpites disponíveis.
+* O número não deve ser revelado ao jogador, a não ser que não lhe restem mais palpites ou ele acerte o número secreto.
+* Quando um jogador fizer um palpite errôneo, o sistema deve ajudar indicando se o palpite foi maior/menor que o número secreto.
+* A partida termina quando o jogador acertar o número secreto ou esgotarem seus palpites.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
+### Tecnologias utilizadas
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+Esta seção apresentar quais tecnologias/bibliotecas/frameworks foram utilizadas neste projeto.
 
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
-
+* Linguagem de programação: [Python 3](https://www.python.org/)
+* Biblioteca GUI: [tkinter](https://docs.python.org/3/library/tkinter.html)
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Instruções
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Nesta seção é descrito como baixar e executar o projeto.
 
-### Prerequisites
+### Pré-requisitos
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Para executar o projeto corretamente é necessário ter instalado o interpretador Python versão `3.8+`. Para verificar se o interpretador está instalado utilize o comando abaixo no Command Prompt (Windows) ou Terminal (Linux):
+
 ```sh
-npm install npm@latest -g
+python --version
 ```
 
-### Installation
+Além do interpretador, é necessário a biblioteca `tkinter`. Para instalar a biblioteca utilize o comando abaixo:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
 ```sh
-git clone https:://github.com/your_username_/Project-Name.git
+pip install tkinter
 ```
-3. Install NPM packages
+
+Para verificar a instalação utilize o comando abaixo:
+
 ```sh
-npm install
-```
-4. Enter your API in `config.js`
-```JS
-const API_KEY = 'ENTER YOUR API';
+python -m tkinter
 ```
 
-<!-- USAGE EXAMPLES -->
-## Usage
+Uma deve surgir, semelhante à imagem abaixo:
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+![[Biblioteca Tkinter versão][tkinter-version]](https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number)
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Instalação
+
+Para instalar o jogo, basta clonar o repositório e executar o arquivo `main.py`:
+
+1. Para clonar o repositório utilize o seguinte comando:
+```sh
+https://github.com/ocaradosalgoritmos/projetos_python.git
+```
+2. Então execute o arquivo `main.py` que encontra-se dentro da pasta `guess_the_number`:
+```sh
+python guess_the_number/main.py
+```
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+Veja a página [open issues](https://github.com/ocaradosalgoritmos/projetos_python/issues) para uma lista de melhorias propostas (e bugs conhecidos).
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contribuições
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contrubuições podem ser feitas pela comunidade e são **muito bem vindas**!.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Faça um Fork do projeto
+2. Crie um novo Branch para sua melhoria:
+
+```sh
+git checkout -b feature/NovaMelhoria
+```
+
+3. Faça o Commit suas alterações:
+
+```sh
+git commit -m 'adição da nova melhoria'
+```
+
+4. Faça o Push do novo Branch:
+
+```sh
+git push origin feature/NovaMelhoria
+```
+
+5. Abra uma Pull Request para análise.
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Este projeto é distribuído sob a linceça GNU General Public License v3.0. Veja em [LICENSE](https://github.com/ocaradosalgoritmos/projetos_python/blob/main/LICENSE) mais informações.
 
 <!-- CONTACT -->
-## Contact
+## Contato
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+O Cara dos Algoritmos @ocaradosalgoritmos
+- [Instagram](https://www.instagram.com/ocaradosalgoritmos/)
+- [Youtube](https://www.youtube.com/channel/UCH2hQ1qlt_Emv4exefAmw0w)
+- [Wordpress](https://ocaradosalgoritmos.wordpress.com/)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Link do projeto: [https://github.com/ocaradosalgoritmos/projetos_python/guess_the_number](https://github.com/ocaradosalgoritmos/projetos_python/edit/main/guess_the_numbe)
 
-<!-- ACKNOWLEDGEMENTS -->
+<!-- ACKNOWLEDGEMENTS 
 ## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
@@ -157,6 +173,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 * [Sticky Kit](http://leafo.net/sticky-kit)
 * [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
+-->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -173,3 +190,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcosmapl
 [product-screenshot]: ../images/guess_the_number_screenshot.png
+[tkinter-version]: ../images/tkinter-version-screenshot.png

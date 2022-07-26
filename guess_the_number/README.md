@@ -17,7 +17,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ocaradosalgorimtos/projetos_python">
-    <img src="../images/youtube-channel-art.png" alt="Logo" width="80" height="80">
+    <img src="../images/youtube-channel-art-short.png" alt="Logo">
   </a>
 
   <h3 align="center">Jogo Advinhe o Número (Number guessing Game) - Python</h3>
@@ -41,15 +41,13 @@
 
 * [Sobre o projeto](#sobre-o-projeto)
   * [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Instruções](#instrues)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
+* [Instruções](#instruções)
+  * [Pré-requisitos](#pré-requisitos)
+  * [Instalação](#instalação)
 * [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
+* [Contribuições](#contribuições)
+* [Licença](#licença)
+* [Contato](#contato)
 
 <!-- ABOUT THE PROJECT -->
 ## Sobre o projeto
@@ -99,7 +97,7 @@ python -m tkinter
 
 Uma deve surgir, semelhante à imagem abaixo:
 
-![[Biblioteca Tkinter versão][tkinter-version]](https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number)
+[![Biblioteca Tkinter versão][tkinter-version]](https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number)
 
 ### Instalação
 
@@ -146,9 +144,9 @@ git push origin feature/NovaMelhoria
 5. Abra uma Pull Request para análise.
 
 <!-- LICENSE -->
-## License
+## Licença
 
-Este projeto é distribuído sob a linceça GNU General Public License v3.0. Veja em [LICENSE](https://github.com/ocaradosalgoritmos/projetos_python/blob/main/LICENSE) mais informações.
+Este projeto é distribuído sob `GNU General Public License v3.0`. Veja em [LICENSE](https://github.com/ocaradosalgoritmos/projetos_python/blob/main/LICENSE) mais informações.
 
 <!-- CONTACT -->
 ## Contato
@@ -189,5 +187,5 @@ Link do projeto: [https://github.com/ocaradosalgoritmos/projetos_python/guess_th
 [license-url]: https://github.com/ocaradosalgoritmos/projetos_python/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcosmapl
-[product-screenshot]: ../images/guess_the_number_screenshot.png
 [tkinter-version]: ../images/tkinter-version-screenshot.png
+[product-screenshot]: ../images/guess_the_number_screenshot.png

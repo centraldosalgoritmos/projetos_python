@@ -18,7 +18,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ocaradosalgorimtos/projetos_python">
-    <img src="../images/youtube-channel-logo.png" alt="Logo" width="80" height="80">
+    <img src="../images/youtube-channel-logo.png" alt="Logo" width="240" height="240">
   </a>
 
   <h3 align="center">Jogo Advinhe o Número (Number guessing Game) - Python</h3>

@@ -39,15 +39,18 @@
 
 Segue a listagem de projetos implementados neste repositório:
 
-* [Jogo Advinhe o Número](#jogo-advinhe-o-número)
+* [Projetos](#projetos)
+  * [Jogo Número Secreto](#jogo-número-secreto)
 * [Contribuições](#contribuições)
 * [Licença](#licença)
 * [Contato](#contato)
 
 <!-- ABOUT THE PROJECT -->
-## Jogo advinhe o número
+## Projetos
 
-[![Jogo Advinhe o Número Screenshot][number-guessing-screenshot]](https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number)
+### Jogo Número Secreto
+
+[![Jogo Número Secreto Screenshot][number-guessing-screenshot]](https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number)
 
 Este é um dos primeiros projetos feitos por estudantes de computação. A tarefa consiste em criar um jogo que escolha randômicamente um número secreto entre 1 e 100 e dê ao jogador a tarefa de acertâ-lo através de palpites.
 
@@ -133,4 +136,4 @@ Link do projeto: [https://github.com/ocaradosalgoritmos/projetos_python/guess_th
 [license-url]: https://github.com/ocaradosalgoritmos/projetos_python/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcosmapl
-[number-guessing-screenshot]: ../images/guess_the_number_screenshot.png
+[number-guessing-screenshot]: images/guess_the_number_screenshot.png

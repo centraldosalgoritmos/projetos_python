@@ -2,5 +2,5 @@
 from view import JogoGUI
 
 if __name__ == '__main__':
-   jogo = JogoGUI('JOGO DO NÚMERO SECRETO', '1.0')
-   jogo.mainloop()
+   gui = JogoGUI('JOGO DO NÚMERO SECRETO', '1.0')
+   gui.mainloop()

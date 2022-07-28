@@ -1,4 +1,8 @@
 # -*- coding: utf-8 -*-
+"""
+@description Number Guessing Game by O Cara dos Algoritmos @ocaradosalgoritmos
+@since 2022-07-28
+"""
 import tkinter as tk
 from tkinter import messagebox
 

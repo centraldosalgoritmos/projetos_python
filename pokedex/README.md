@@ -20,15 +20,15 @@
     <img src="../images/youtube-channel-art-short.png" alt="Logo">
   </a>
 
-  <h3 align="center">Jogo Advinhe o Número (Number guessing Game) - Python</h3>
+  <h3 align="center">Pokémon Pokédex via PokeAPI - Python</h3>
 
   <p align="center">
-    Tente descobrir o número secreto!
+    Uma Pokédex em Python que consulta os Pokémons diretamente pela PokeAPI
     <br />
     <a href="https://github.com/ocaradosalgoritmos/projetos_python/wiki"><strong>Consulte a documentação »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number">Demonstração</a>
+    <a href="https://github.com/ocaradosalgoritmos/projetos_python/tree/main/pokedex">Demonstração</a>
     ·
     <a href="https://github.com/ocaradosalgoritmos/projetos_python/issues">Reportar um Bug</a>
     ·
@@ -52,16 +52,13 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre o projeto
 
-[![Jogo Advinhe o Número Screenshot][product-screenshot]](https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number)
+[![Pokemon Pokedex][product-screenshot]](https://github.com/ocaradosalgoritmos/projetos_python/tree/main/pokedex)
 
-Este é um dos primeiros projetos feitos por estudantes de computação. A tarefa consiste em criar um jogo que escolha randômicamente um número secreto entre 1 e 100 e dê ao jogador a tarefa de acertâ-lo através de palpites.
+Relembrar é viver! Não? Justamente por isso criei este projeto sensacional! Uma Pokédex em Python que permite consultar Pokémons diretamente pela [PokéAPI](https://pokeapi.co/)
 
-Regras:
-* A cada partida o sistema deve selecionar randômicamente um número entre 1 e 100.
-* Durante uma partida o jogador possui um número finito e pré definido de palpites disponíveis.
-* O número não deve ser revelado ao jogador, a não ser que não lhe restem mais palpites ou ele acerte o número secreto.
-* Quando um jogador fizer um palpite errôneo, o sistema deve ajudar indicando se o palpite foi maior/menor que o número secreto.
-* A partida termina quando o jogador acertar o número secreto ou esgotarem seus palpites.
+Nesta Pokédex, além do identificar, nome e da foto do Pokémon, também são listadas características físicas como altura e peso. Para complementar as informações, também é possível conferir os "status" base do Pokémon por meio de gráficos de barra.
+
+Por fim, também é possível navegar por toda lista de Pokémons somente pelas setas do teclado!!!
 
 ### Tecnologias utilizadas
 
@@ -69,6 +66,9 @@ Esta seção apresentar quais tecnologias/bibliotecas/frameworks foram utilizada
 
 * Linguagem de programação: [Python 3](https://www.python.org/)
 * Biblioteca GUI: [tkinter](https://docs.python.org/3/library/tkinter.html)
+* Biblioteca para manipulação de imagens: [Pillow](https://pillow.readthedocs.io/en/stable/)
+* Biblioteca para manipulação de URLS: [urllib](https://docs.python.org/3/library/urllib.html)
+* Biblioteca para requisições a APIs: [requests](https://pypi.org/project/requests/)
 
 <!-- GETTING STARTED -->
 ## Instruções
@@ -99,17 +99,31 @@ Uma deve surgir, semelhante à imagem abaixo:
 
 [![Biblioteca Tkinter versão][tkinter-version]](https://github.com/ocaradosalgoritmos/projetos_python/tree/main/guess_the_number)
 
+O próximo passo é installar a biblioteca `Pillow` pelo comando abaixo:
+
+```sh
+python3 -m pip install --upgrade Pillow
+```
+
+Por fim, a última dependência do projeto é a biblioteca `requests`. Para sua instalação, utilize o comando abaixo:
+
+```sh
+pip install requests
+```
+
 ### Instalação
 
-Para instalar o jogo, basta clonar o repositório e executar o arquivo `main.py`:
+Para executar o projeto, basta clonar este repositório e executar o arquivo `main.py`:
 
 1. Para clonar o repositório utilize o seguinte comando:
+
 ```sh
 https://github.com/ocaradosalgoritmos/projetos_python.git
 ```
-2. Então execute o arquivo `main.py` que encontra-se dentro da pasta `guess_the_number`:
+2. Então execute o arquivo `main.py` que encontra-se dentro da pasta `pokedex`:
+
 ```sh
-python guess_the_number/main.py
+python pokedex/main.py
 ```
 
 <!-- ROADMAP -->
@@ -156,7 +170,7 @@ O Cara dos Algoritmos @ocaradosalgoritmos
 - [Youtube](https://www.youtube.com/channel/UCH2hQ1qlt_Emv4exefAmw0w)
 - [Wordpress](https://ocaradosalgoritmos.wordpress.com/)
 
-Link do projeto: [https://github.com/ocaradosalgoritmos/projetos_python/guess_the_number](https://github.com/ocaradosalgoritmos/projetos_python/edit/main/guess_the_numbe)
+Link do projeto: [https://github.com/ocaradosalgoritmos/projetos_python/pokedex](https://github.com/ocaradosalgoritmos/projetos_python/edit/main/pokedex)
 
 <!-- ACKNOWLEDGEMENTS 
 ## Acknowledgements
@@ -187,5 +201,5 @@ Link do projeto: [https://github.com/ocaradosalgoritmos/projetos_python/guess_th
 [license-url]: https://github.com/ocaradosalgoritmos/projetos_python/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marcosmapl
+[product-screenshot]: ../images/pokedex_art.png
 [tkinter-version]: ../images/tkinter-version-screenshot.png
-[product-screenshot]: ../images/guess_the_number_screenshot.png

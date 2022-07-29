@@ -156,7 +156,7 @@ O Cara dos Algoritmos @ocaradosalgoritmos
 - [Youtube](https://www.youtube.com/channel/UCH2hQ1qlt_Emv4exefAmw0w)
 - [Wordpress](https://ocaradosalgoritmos.wordpress.com/)
 
-Link do projeto: [https://github.com/ocaradosalgoritmos/projetos_python/guess_the_number](https://github.com/ocaradosalgoritmos/projetos_python/edit/main/guess_the_numbe)
+Link do projeto: [https://github.com/ocaradosalgoritmos/projetos_python/guess_the_number](https://github.com/ocaradosalgoritmos/projetos_python/edit/main/guess_the_number)
 
 <!-- ACKNOWLEDGEMENTS 
 ## Acknowledgements

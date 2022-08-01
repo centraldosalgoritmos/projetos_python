@@ -12,9 +12,8 @@ class Partida:
         self.__n_min = n_min
         self.__n_max = n_max
         self.__n_tentativas = n_tentativas
-        self.__fim_partida = False
         self.__numero_secreto = randint(n_min, n_max)
-        self.__palpites = []
+        self.__ultimo_palpite = None
 
     @property
     def n_min(self):
@@ -30,30 +29,21 @@ class Partida:
 
     @property
     def fim_partida(self):
-        return self.__fim_partida
-
-    @property
-    def palpites(self):
-        return ','.join([str(x) for x in self.__palpites])
+        return self.n_tentativas < 1
 
     def get_dica(self):
-        if self.__palpites[-1] > self.__numero_secreto:
-            return f'SEU PALPITE {self.__palpites[-1]} FOI MAIOR QUE O NÚMERO SECRETO!'
-        return f'SEU PALPITE {self.__palpites[-1]} FOI MENOR QUE O NÚMERO SECRETO!'
+        if self.__ultimo_palpite > self.__numero_secreto:
+            return f'<{self.__ultimo_palpite}'
+        return f'>{self.__ultimo_palpite}'
 
     def palpitar(self, palpite: int):
+        if self.n_tentativas < 1:
+            raise Exception(f'JOGO JÁ FINALIZADO!\nNÃO É POSSÍVEL FAZER MAIS PALPITES.')
         if palpite < self.n_min or palpite > self.n_max:
             raise ValueError(f'PALPITE INVÁLIDO! O PALPITE DEVE ESTAR NO INTERVALO {self.n_min}-{self.n_max}.')
 
-        if not self.fim_partida:
-            self.__palpites.append(palpite)
-            self.__n_tentativas -= 1
-            if self.__palpites[-1] == self.__numero_secreto:
-                self.__fim_partida = True
-                return True
-
-            if self.n_tentativas < 1:
-                self.__fim_partida = True
-        else:
-            raise Exception(f'JOGO JÁ FINALIZADO!\nNÃO É POSSÍVEL FAZER MAIS PALPITES.')
+        self.__n_tentativas -= 1
+        self.__ultimo_palpite = palpite
+        if self.__ultimo_palpite == self.__numero_secreto:
+            return True
         return False
